@@ -1,0 +1,9 @@
+profe son 5 nada mas porque cada imagen contiene la version de Desktop para pc y la de mobile.
+
+Tambien quizas notas algunas diferencias entre la pagina programada y los wireframes, ya que los hice antes de comenzar a programar y fueron
+surguiendo mejores ideas para la pagina.
+
+PD: en la pagina de Sobre Mi wireframe se observa un dispositivo mobile alargado haciendo referencia al scroll que podemos hacer, devido a la falta de espacio
+para poner mas contenido en una pantalla tan chica.
+
+Gracias por leer!!!

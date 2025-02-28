@@ -1,0 +1,508 @@
+
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+/* pagina mi cv */
+
+.mi-pdf{
+    display: none;
+}
+
+.pdf{
+    margin-top: 150px;
+}
+
+.descargarCv{
+    display: none;
+}
+
+/*--------------*/
+
+h1 {
+    color: rgb(79, 77, 77);
+    text-align: center;
+    margin: 40px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+/* Header */
+
+
+
+
+
+
+
+
+
+.navheader {
+    background-color: rgb(212, 85, 85);
+    display:flex ;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    
+}
+
+li a{
+    text-decoration: none;
+    margin-right: 80px;
+    color: beige;
+    
+}
+
+
+ul li {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.logo {
+    display: inline;
+    margin-right: 50px;
+    width: 150px;
+}
+
+.imagenLogo {
+    width: 80%;
+    border-radius: 20%;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+
+
+ul :hover{
+    color: black;
+}
+
+
+
+
+
+
+/* footer estilos */
+
+.elementos-footer{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(212, 85, 85);
+    border-radius: 30px;
+}
+
+.img-avatar img{
+    margin-top: 5px;
+    width: 20%;
+    height: 90%;
+    border-radius: 100px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: -470px;
+    }
+
+    .botones a{
+        color: black;
+    }
+
+.bi{
+        margin-bottom: 10px;
+    }
+
+.text-footer{
+    margin-left: 50px;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.copyright{
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* --------------------------------------fin footer */
+
+/* index */
+body {
+    background-color:rgb(211, 181, 181);
+    font-family: "Nunito Sans", serif;
+}
+
+.itemsimg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    
+    
+}
+
+.imgConocimientos {
+    width: 100%;
+}
+.imghtml{
+    width: 105%;
+    
+}
+
+.imgcss{
+    width: 65%;
+    margin-left:100px;
+    margin-top: 20px;
+}
+
+.imgjs{
+    width: 73%;
+    margin-top: 20px;
+}
+
+.textos-bajoimg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.textos-img {
+    font-size: 20px;
+    width: 80%;
+}
+
+.textcss{
+    margin-left: 30px;
+}
+
+
+/* fin de index */
+
+/* Formulario de contacto */
+
+.form-contacto{
+    padding: 50px;
+    margin: 50px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+
+.col {
+    margin-bottom: 20px;
+}
+
+.email-ancho{
+    display: inline;
+    justify-content:center ;
+}
+
+
+
+
+
+
+
+
+/* fin de formulario */            
+
+
+/* Pagina Sobre Mi */
+
+.coderhouse img {
+    width: 14%;
+}
+
+.utn {
+    display: flex;
+    border: solid;
+    padding: 30px;
+    border-style: dashed;
+}
+
+.utn p {
+    font-size: 20px;
+    margin-left: 3%;
+    width: 50%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.coderhouse {
+    display: flex;
+    border: solid;
+    border-style: dashed;
+}
+
+.coderhouse img {
+    position: relative;
+    left: 80%;
+    
+}
+
+.coderhouse p {
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 50%;
+}
+
+.cursado {
+    padding: 40px;
+}
+
+/* fin de pagina Sobre Mi */
+
+/* Mis Proyectos */
+
+.imgCarrusel{
+    border: solid;
+    border-color: rgb(212, 85, 85);
+    border-radius: 5px;
+    margin: 200px;
+    margin-top: 10px;
+}
+
+/*-------------------*/                 
+
+@media screen and (max-width: 500px) {
+
+    /* header */
+
+    .navheader {
+        height: 400px;
+        width: 390px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "ul"
+        ;
+    }
+    
+    .logo {
+        grid-column: 1 / 3;
+        grid-area: logo;
+        grid-row: 1 / 1 ;
+        display: grid;
+        justify-content: center;
+        
+        }
+
+    .logo img {
+        width: 120px;
+        height: 120px;
+        margin-left: 93%;
+        margin-top: 20px;
+    }
+
+    ul {
+        grid-area: ul;
+        grid-column: 1 / span 3 ;
+        width: 110%;
+        margin-left: 1%;
+    }
+    /* index */
+    .h1-index{
+        justify-content: center;
+    }
+    
+    .itemsimg{
+        
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "imghtml"
+        "imgcss"
+        "imgjs"
+        ;
+
+    }
+    .imghmtl {
+        grid-area: imghtml;
+        width: 60%;
+        height: 5%;
+        margin-bottom: 10px;
+        
+    }
+    .imgcss {
+        grid-area: imgcss;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 100px;
+        width: 70%;
+        margin-left: 67px;
+    }
+    
+    .imgjs {
+        grid-area: imgjs;
+        margin-left: 65px;
+        width: 70%;
+    }
+    
+    
+    .conocimientos {
+        margin-top: 300px;
+        
+    }
+    
+    .textos-img {
+        width: 100%;
+        margin-right: 30px;
+    }
+    
+    .textos-bajoimg{
+        display: grid;
+        
+        grid-template-rows: 30% auto auto;
+        grid-area: 
+        "texthtml"
+        "textcss"
+        "textjs"
+        ;
+        width: 90%;
+        height: 500px;
+        margin-left: 20px;
+    }
+    
+    
+
+
+    .texthtml{
+        grid-area: texthtml;
+        grid-row: 1 / 2;
+        
+    }
+
+    .textcss{
+        grid-area: textcss;
+        grid-row: 2 / 3;
+        margin-left: 2px;
+        margin-bottom: -30px;
+    }
+    
+    .textjs {
+        grid-area: textjs;
+        grid-row: 3 / 4;
+        margin-top: 5px;
+    }
+    /* Fin de index */
+    
+    /* foooter */
+
+    .elementos-footer{
+        display: grid;
+        grid-template-rows: 50% 45% 5%;
+        grid-template-areas: 
+        "img-avatar"
+        "text-footer"
+        "copyright"
+        ;
+    }
+
+    .img-avatar{
+        grid-area: img-avatar;
+        width: 60%;
+    }
+
+    .img-avatar img{
+        width: 58%;
+        height: 42%;
+    }
+
+
+    .text-footer{
+        grid-area: text-footer;
+        margin-top: -116px;
+        margin-left: -1px;
+    }
+    
+    .text-footer p{
+        width: 110%;
+    }
+    
+    .copyright{
+        grid-area: copyright;
+        
+    }
+
+    .botones{
+        display: flex;
+        margin-left: 128px;
+        margin-top: -483px;
+        top: 5%;
+    }
+
+
+
+/* mis proyectos responsive */
+    
+    .imgCarrusel{
+        width: 5%;
+        border: none;
+        margin-left: 370px;
+        margin-top: 300px;
+    }
+
+    .imgs{
+        margin-left: -370px;
+    }
+/* Mi CV */
+
+    .pdf{
+        display: none;
+    }
+
+    .mi-pdf{
+        margin-top: 400px;
+        display: block;
+        width: 100%;
+    }
+
+    .descargarCv{
+        display: flex;
+        width: 40%;
+        margin: 40px;
+        text-decoration: none;
+        font-style: bold;
+    }
+
+    .boton-descargar{
+        margin-left: 100px;
+        background-color: rgb(212, 85, 85);
+        
+    }
+
+    
+
+/* formulario contacto */
+    
+    .form-contacto{
+        margin-top: 400px;
+    }
+    
+    }
+/* fin de responsive mobile */
