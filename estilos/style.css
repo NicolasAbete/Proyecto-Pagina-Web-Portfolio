@@ -288,6 +288,11 @@ body {
 
     /* header */
 
+    .fixed-top {
+        position: relative;
+    }
+
+
     .navheader {
         height: 400px;
         width: 390px;
@@ -364,10 +369,6 @@ body {
     }
     
     
-    .conocimientos {
-        margin-top: 300px;
-        
-    }
     
     .textos-img {
         width: 100%;
@@ -464,7 +465,7 @@ body {
         width: 5%;
         border: none;
         margin-left: 370px;
-        margin-top: 300px;
+        
     }
 
     .imgs{
@@ -474,10 +475,11 @@ body {
 
     .pdf{
         display: none;
+        
     }
 
     .mi-pdf{
-        margin-top: 400px;
+        
         display: block;
         width: 100%;
     }
@@ -501,7 +503,7 @@ body {
 /* formulario contacto */
     
     .form-contacto{
-        margin-top: 400px;
+        margin-top: -10px;
     }
     
     }
