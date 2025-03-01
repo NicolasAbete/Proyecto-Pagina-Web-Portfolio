@@ -430,7 +430,7 @@ body {
     }
 
     .img-avatar img{
-        width: 58%;
+        width: 70%;
         height: 42%;
     }
 
@@ -452,9 +452,12 @@ body {
 
     .botones{
         display: flex;
-        margin-left: 128px;
-        margin-top: -483px;
+        margin-left: 119px;
+        margin-top: -515px;
         top: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
     }
 
 
