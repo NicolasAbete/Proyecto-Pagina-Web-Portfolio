@@ -117,7 +117,7 @@ ul :hover{
     margin-left: -470px;
     }
 
-    .botones a{
+.botones a{
         color: black;
     }
 
@@ -226,48 +226,75 @@ body {
 
 /* Pagina Sobre Mi */
 
-.coderhouse img {
-    width: 14%;
+.sobre-mi-body {
+    background: rgb(211, 181, 181);
+    color: #fff;
+    text-align: center;
 }
-
-.utn {
-    display: flex;
-    border: solid;
+.sobre-mi-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgb(218, 104, 104);
     padding: 30px;
-    border-style: dashed;
+    border-radius: 15px;
+    margin-top: 160px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.utn p {
-    font-size: 20px;
-    margin-left: 3%;
-    width: 50%;
-    text-align: center;
-    margin-top: 1%;
+.sobre-mi-title {
+    margin-top: 15px;
+    font-size: 2rem;
 }
-
-.coderhouse {
+.sobre-mi-description {
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+.sobre-mi-section {
     display: flex;
-    border: solid;
-    border-style: dashed;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
 }
-
-.coderhouse img {
-    position: relative;
-    left: 80%;
-    
+.sobre-mi-section img {
+    width: 45%;
+    border-radius: 10px;
 }
-
-.coderhouse p {
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-    margin-top: 5%;
-    margin-left: 15%;
+.sobre-mi-text {
     width: 50%;
+    font-size: 20px;
+}
+.sobre-mi-social-links {
+    margin-top: 30px;
+}
+.sobre-mi-social-links a {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.sobre-mi-social-links a:hover {
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.cursado {
-    padding: 40px;
+.sobre-mi-botones {
+    width: 1088px;
+    flex-direction: row-reverse;
+    margin-right: 69px;
+}
+
+.sobre-mi-botones a {
+    margin-right: 77px;
 }
 
 /* fin de pagina Sobre Mi */
@@ -351,15 +378,15 @@ body {
         width: 60%;
         height: 5%;
         margin-bottom: 10px;
-        
+        margin-left: 10px;
     }
     .imgcss {
         grid-area: imgcss;
-        margin-top: 20px;
+        margin-top: 26px;
         margin-bottom: 20px;
         margin-right: 100px;
         width: 70%;
-        margin-left: 67px;
+        margin-left: 59px;
     }
     
     .imgjs {
@@ -465,7 +492,7 @@ body {
 /* mis proyectos responsive */
     
     .imgCarrusel{
-        width: 5%;
+        width: 0%;
         border: none;
         margin-left: 370px;
         
@@ -509,5 +536,33 @@ body {
         margin-top: -10px;
     }
     
+
+
+/* Sobre Mi responsive */
+    
+    .sobre-mi-container {
+        height: 1869px;
+        margin-top: 10px;
     }
+
+
+    .sobre-mi-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sobre-mi-section img, .sobre-mi-text {
+        width: 100%;
+    }
+
+    .sobre-mi-botones{
+        width: 40px;
+        margin-top: 26px;
+        margin-left: 36px;
+    }
+
+
+    }
+
+
+
 /* fin de responsive mobile */
