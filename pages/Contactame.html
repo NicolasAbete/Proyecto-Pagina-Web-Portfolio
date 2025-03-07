@@ -17,21 +17,42 @@
 
 </head>
 <body>
-    <header>
-        
-        <nav class="navheader fixed-top">
-            <a href="../index.html" class="logo">
-                <img src="../Img/Nico.jpg" alt="Logo" class="imagenLogo">
-                </a>
-            <ul>
-                <li><a class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: red" href="../index.html">Inicio</a></li>
-                <li><a class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: red" href="../pages/misProyectos.html">Mis Proyectos</a></li>
-                <li><a class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: red" href="../pages/miCurriculum.html">Mi Curriculúm</a></li>
-                <li><a class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: red" href="../pages/sobreMi.html">Sobre Mi</a></li>
-                <li><a class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: red" href="#">Contactame</a></li>
-            </ul>
-        </nav>
-    
+    <header class="mi-header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg mi-navbar">
+                <!-- Logo y nombre -->
+                <div class="mi-brand-container">
+                    <img src="../Img/Nico.jpg" alt="Logo" class="mi-logo">
+                    <a class="mi-brand" href="#">MiPortfolio</a>
+                </div>
+                
+                <!-- Botón para móviles -->
+                <button class="navbar-toggler mi-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mi-navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navegación centrada -->
+                <div class="collapse navbar-collapse mi-navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mi-nav-item">
+                            <a class="nav-link mi-nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mi-nav-item">
+                            <a class="nav-link mi-nav-link" href="./misProyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item mi-nav-item">
+                            <a class="nav-link mi-nav-link" href="./sobreMi.html">SobreMi</a>
+                        </li>
+                        <li class="nav-item mi-nav-item">
+                            <a class="nav-link mi-nav-link" href="./miCurriculum.html">CV</a>
+                        </li>
+                        <li class="nav-item mi-nav-item">
+                            <a class="nav-link mi-nav-link active" href="./Contactame.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
 <main>
@@ -136,6 +157,7 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 
 </body>
 </html>
