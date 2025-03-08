@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Soy muy rápido para trabajar<br>📚 Estoy en constante aprendizaje para ser mejor programador día a día<br>🎯 Me gusta mucho el trabajo en equipo y me adapto bien con mis compañeros a la hora de hace un proyecto</p>
+<p align="left">✨ Soy muy eficiente para trabajar<br>📚 Estoy en constante aprendizaje para ser mejor programador día a día<br>🎯 Me gusta mucho el trabajo en equipo y me adapto bien con mis compañeros a la hora de hace un proyecto</p>
 
 ###
 
