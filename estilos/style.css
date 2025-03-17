@@ -35,6 +35,9 @@ h2 {
   padding: 15px 0;
   transition: all 0.3s ease;
 }
+.mi-header .navbar-nav {
+  text-align: center;
+}
 .mi-header .navbar-nav .mi-nav-item {
   margin: 0 5px;
 }
