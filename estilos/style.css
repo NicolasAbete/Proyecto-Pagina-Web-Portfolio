@@ -1,584 +1,478 @@
 * {
-    margin:0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* pagina mi cv */
-
-.mi-pdf{
-    display: none;
+.mi-pdf {
+  display: none;
 }
 
-.pdf{
-    margin-top: 25px;
+.pdf {
+  margin-top: 25px;
 }
 
-.descargarCv{
-    display: none;
+.descargarCv {
+  display: none;
 }
 
 /*--------------*/
-
 h1 {
-    color: rgb(79, 77, 77);
-    text-align: center;
-    margin: 40px;
+  color: rgb(79, 77, 77);
+  text-align: center;
+  margin: 40px;
 }
 
 h2 {
-    color: rgb(0, 0, 0);
-    font-size: medium;
+  color: rgb(0, 0, 0);
+  font-size: medium;
 }
-/* Header */
 
+/* Header */
 .mi-header {
-    background: linear-gradient(to right, rgb(212, 85, 85), rgb(171 95 95));
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
-    transition: all 0.3s ease;
+  background: linear-gradient(to right, rgb(212, 85, 85), rgb(171, 95, 95));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+.mi-header .navbar-nav .mi-nav-item {
+  margin: 0 5px;
+}
+.mi-header .navbar-nav .nav-link.mi-nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  padding: 8px 50px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.mi-header .navbar-nav .nav-link.mi-nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+.mi-header .navbar-nav .nav-link.mi-nav-link.active {
+  color: white;
+  background-color: rgba(212, 85, 85, 0.6);
+}
+.mi-header .navbar-nav .nav-link.mi-nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  transform: translateX(-50%);
+  border-radius: 3px;
 }
 
 .mi-brand-container {
-    display: flex;
-    align-items: center;
-    margin-left: -250px;
+  display: flex;
+  align-items: center;
+  margin-left: -250px;
 }
 
 .mi-logo {
-    height: 80px;
-    width: auto;
-    margin-right: 10px;
-    border-radius: 10px;
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 .mi-brand {
-    font-weight: 700;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
-
 .mi-brand:hover {
-    color: #e0e0e0;
-    transform: translateY(-2px);
+  color: #e0e0e0;
+  transform: translateY(-2px);
 }
 
 .mi-navbar {
-    position: relative;
-}
-
-.mi-header .navbar-nav .mi-nav-item {
-    margin: 0 5px;
-}
-
-/* Sobreescritura de estilos de navegación Bootstrap */
-.mi-header .navbar-nav .nav-link.mi-nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 500;
-    padding: 8px 50px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.mi-header .navbar-nav .nav-link.mi-nav-link:hover {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
-
-.mi-header .navbar-nav .nav-link.mi-nav-link.active {
-    color: white;
-    background-color: rgba(212, 85, 85, 0.6);
-}
-
-.mi-header .navbar-nav .nav-link.mi-nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 20px;
-    height: 3px;
-    background-color: white;
-    transform: translateX(-50%);
-    border-radius: 3px;
+  position: relative;
 }
 
 .mi-navbar-toggler {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
-
 .mi-navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .mi-navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .mi-navbar-collapse {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-
 
 /* footer estilos */
-
-.elementos-footer{
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(212, 85, 85);
-    border-radius: 30px;
+.elementos-footer {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(212, 85, 85);
+  border-radius: 30px;
 }
 
-.img-avatar img{
-    margin-top: 5px;
-    width: 20%;
-    height: 90%;
-    border-radius: 100px;
+.img-avatar img {
+  margin-top: 5px;
+  width: 20%;
+  height: 90%;
+  border-radius: 100px;
 }
 
-.botones{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: -470px;
-    }
-
-.botones a{
-        color: black;
-    }
-
-.bi{
-        margin-bottom: 10px;
-    }
-
-.text-footer{
-    margin-left: 50px;
-    width: 80%;
-    font-size: 20px;
-    margin-top: 20px;
+.botones {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: -470px;
+}
+.botones a {
+  color: black;
 }
 
-.copyright{
-    margin-top: 80px;
-    font-weight: bold;
+.bi {
+  margin-bottom: 10px;
 }
 
+.text-footer {
+  margin-left: 50px;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
-
-
+.copyright {
+  margin-top: 80px;
+  font-weight: bold;
+}
 
 /* --------------------------------------fin footer */
-
 /* index */
 body {
-    background-color:rgb(211, 181, 181);
-    font-family: "Nunito Sans", serif;
+  background-color: rgb(211, 181, 181);
+  font-family: "Nunito Sans", serif;
 }
 
 .itemsimg {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    
-    
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
 }
 
 .imgConocimientos {
-    width: 100%;
-}
-.imghtml{
-    width: 105%;
-    
+  width: 100%;
 }
 
-.imgcss{
-    width: 65%;
-    margin-left:100px;
-    margin-top: 20px;
+.imghtml {
+  width: 105%;
 }
 
-.imgjs{
-    width: 73%;
-    margin-top: 20px;
+.imgcss {
+  width: 65%;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.imgjs {
+  width: 73%;
+  margin-top: 20px;
 }
 
 .textos-bajoimg {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
 }
+
 .textos-img {
-    font-size: 20px;
-    width: 80%;
+  font-size: 20px;
+  width: 80%;
 }
 
-.textcss{
-    margin-left: 30px;
+.textcss {
+  margin-left: 30px;
 }
-
 
 /* fin de index */
-
 /* Formulario de contacto */
-
-.form-contacto{
-    padding: 50px;
-    margin: 50px;
-    margin-top: 55px;
-    margin-bottom: 100px;
+.form-contacto {
+  padding: 50px;
+  margin: 50px;
+  margin-top: 55px;
+  margin-bottom: 100px;
 }
 
 .col {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.email-ancho{
-    display: inline;
-    justify-content:center ;
+.email-ancho {
+  display: inline;
+  justify-content: center;
 }
 
-
-/* fin de formulario */            
-
-
+/* fin de formulario */
 /* Pagina Sobre Mi */
-
 .sobre-mi-body {
-    background: rgb(211, 181, 181);
-    color: #fff;
-    text-align: center;
+  background: rgb(211, 181, 181);
+  color: #fff;
+  text-align: center;
 }
 .sobre-mi-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 50px auto;
-    background: rgb(218, 104, 104);
-    padding: 30px;
-    border-radius: 15px;
-    margin-top: 75px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgb(218, 104, 104);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 75px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
 .sobre-mi-title {
-    margin-top: 15px;
-    font-size: 2rem;
-    color: black;
+  margin-top: 15px;
+  font-size: 2rem;
+  color: black;
 }
 .sobre-mi-description {
-    margin-top: 10px;
-    line-height: 1.8;
-    font-size: 1.1rem;
+  margin-top: 10px;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 .sobre-mi-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    margin-top: 30px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
 }
 .sobre-mi-section img {
-    width: 45%;
-    border-radius: 10px;
+  width: 45%;
+  border-radius: 10px;
 }
 .sobre-mi-text {
-    width: 50%;
-    font-size: 20px;
+  width: 50%;
+  font-size: 20px;
 }
 .sobre-mi-social-links {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .sobre-mi-social-links a {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 12px 18px;
-    margin: 8px;
-    border-radius: 25px;
-    display: inline-block;
-    transition: 0.3s;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 18px;
+  margin: 8px;
+  border-radius: 25px;
+  display: inline-block;
+  transition: 0.3s;
+  font-weight: bold;
 }
 .sobre-mi-social-links a:hover {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
-
 .sobre-mi-botones {
-    width: 1088px;
-    flex-direction: row-reverse;
-    margin-right: 69px;
+  width: 1088px;
+  flex-direction: row-reverse;
+  margin-right: 69px;
 }
-
 .sobre-mi-botones a {
-    margin-right: 77px;
+  margin-right: 77px;
 }
 
 /* fin de pagina Sobre Mi */
-
 /* Mis Proyectos */
-
-.imgCarrusel{
-    border: solid;
-    border-color: rgb(212, 85, 85);
-    border-radius: 5px;
-    margin: 200px;
-    margin-top: 10px;
+.imgCarrusel {
+  border: solid;
+  border-color: rgb(212, 85, 85);
+  border-radius: 5px;
+  margin: 200px;
+  margin-top: 10px;
 }
 
-/*-------------------*/                 
-
+/*-------------------*/
 @media screen and (max-width: 500px) {
-
-    /* header */
-    .mi-navbar-collapse {
-        position: relative;
-        left: auto;
-        transform: none;
-        background-color: rgba(212, 85, 85, 0.95);
-        border-radius: 8px;
-        margin-top: 10px;
-        padding: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        width: 105%;
-    }
-    
-    .mi-brand-container {
-        margin-left: 0px;
-    }
-
-    .mi-header .navbar-nav .nav-link.mi-nav-link {
-        padding: 10px 15px;
-        margin: 5px 0;
-    }
-    
-    .mi-header .navbar-nav .nav-link.mi-nav-link.active::after {
-        width: 40px;
-    }
-
-    
-    /* index */
-    .h1-index{
-        justify-content: center;
-    }
-    
-    .itemsimg{
-        
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "imghtml"
-        "imgcss"
-        "imgjs"
-        ;
-
-    }
-    .imghmtl {
-        grid-area: imghtml;
-        width: 60%;
-        height: 5%;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-    .imgcss {
-        grid-area: imgcss;
-        margin-top: 26px;
-        margin-bottom: 20px;
-        margin-right: 100px;
-        width: 70%;
-        margin-left: 59px;
-    }
-    
-    .imgjs {
-        grid-area: imgjs;
-        margin-left: 65px;
-        width: 70%;
-    }
-    
-    
-    
-    .textos-img {
-        width: 100%;
-        margin-right: 30px;
-    }
-    
-    .textos-bajoimg{
-        display: grid;
-        
-        grid-template-rows: 30% auto auto;
-        grid-area: 
-        "texthtml"
-        "textcss"
-        "textjs"
-        ;
-        width: 90%;
-        height: 500px;
-        margin-left: 20px;
-    }
-    
-    
-
-
-    .texthtml{
-        grid-area: texthtml;
-        grid-row: 1 / 2;
-        
-    }
-
-    .textcss{
-        grid-area: textcss;
-        grid-row: 2 / 3;
-        margin-left: 2px;
-        margin-bottom: -30px;
-    }
-    
-    .textjs {
-        grid-area: textjs;
-        grid-row: 3 / 4;
-        margin-top: 5px;
-    }
-    /* Fin de index */
-    
-    /* foooter */
-
-    .elementos-footer{
-        display: grid;
-        grid-template-rows: 50% 45% 5%;
-        grid-template-areas: 
-        "img-avatar"
-        "text-footer"
-        "copyright"
-        ;
-    }
-
-    .img-avatar{
-        grid-area: img-avatar;
-        width: 60%;
-    }
-
-    .img-avatar img{
-        width: 70%;
-        height: 42%;
-    }
-
-
-    .text-footer{
-        grid-area: text-footer;
-        margin-top: -116px;
-        margin-left: -1px;
-    }
-    
-    .text-footer p{
-        width: 110%;
-    }
-    
-    .copyright{
-        grid-area: copyright;
-        
-    }
-
-    .botones{
-        display: flex;
-        margin-left: 119px;
-        margin-top: -515px;
-        top: 5%;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 100px;
-    }
-
-
-
-/* mis proyectos responsive */
-    
-    .imgCarrusel{
-        width: 0%;
-        border: none;
-        margin-left: 370px;
-        
-    }
-
-    .imgs{
-        margin-left: -370px;
-    }
-/* Mi CV */
-
-    .pdf{
-        display: none;
-        
-    }
-
-    .mi-pdf{
-        
-        display: block;
-        width: 100%;
-    }
-
-    .descargarCv{
-        display: flex;
-        width: 40%;
-        margin: 40px;
-        text-decoration: none;
-        font-style: bold;
-    }
-
-    .boton-descargar{
-        margin-left: 100px;
-        background-color: rgb(212, 85, 85);
-        
-    }
-
-    
-
-/* formulario contacto */
-    
-    .form-contacto{
-        margin-top: -10px;
-    }
-    
-
-
-/* Sobre Mi responsive */
-    
-    .sobre-mi-container {
-        height: 1869px;
-        margin-top: 10px;
-    }
-
-
-    .sobre-mi-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .sobre-mi-section img, .sobre-mi-text {
-        width: 100%;
-    }
-
-    .sobre-mi-botones{
-        width: 40px;
-        margin-top: 26px;
-        margin-left: 36px;
-    }
-
-
-    }
-
-
-
+  /* header */
+  .mi-navbar-collapse {
+    position: relative;
+    left: auto;
+    transform: none;
+    background-color: rgba(212, 85, 85, 0.95);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 105%;
+  }
+  .mi-brand-container {
+    margin-left: 0px;
+  }
+  .mi-header .navbar-nav .nav-link.mi-nav-link {
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+  .mi-header .navbar-nav .nav-link.mi-nav-link.active::after {
+    width: 40px;
+  }
+  /* index */
+  .h1-index {
+    justify-content: center;
+  }
+  .itemsimg {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "imghtml" "imgcss" "imgjs";
+  }
+  .imghmtl {
+    grid-area: imghtml;
+    width: 60%;
+    height: 5%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .imgcss {
+    grid-area: imgcss;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    width: 70%;
+    margin-left: 59px;
+  }
+  .imgjs {
+    grid-area: imgjs;
+    margin-left: 65px;
+    width: 70%;
+  }
+  .textos-img {
+    width: 100%;
+    margin-right: 30px;
+  }
+  .textos-bajoimg {
+    display: grid;
+    grid-template-rows: 30% auto auto;
+    grid-area: "texthtml" "textcss" "textjs";
+    width: 90%;
+    height: 500px;
+    margin-left: 20px;
+  }
+  .texthtml {
+    grid-area: texthtml;
+    grid-row: 1/2;
+  }
+  .textcss {
+    grid-area: textcss;
+    grid-row: 2/3;
+    margin-left: 2px;
+    margin-bottom: -30px;
+  }
+  .textjs {
+    grid-area: textjs;
+    grid-row: 3/4;
+    margin-top: 5px;
+  }
+  /* Fin de index */
+  /* foooter */
+  .elementos-footer {
+    display: grid;
+    grid-template-rows: 50% 45% 5%;
+    grid-template-areas: "img-avatar" "text-footer" "copyright";
+  }
+  .img-avatar {
+    grid-area: img-avatar;
+    width: 60%;
+  }
+  .img-avatar img {
+    width: 70%;
+    height: 42%;
+  }
+  .text-footer {
+    grid-area: text-footer;
+    margin-top: -116px;
+    margin-left: -1px;
+  }
+  .text-footer p {
+    width: 110%;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
+  .botones {
+    display: flex;
+    margin-left: 119px;
+    margin-top: -515px;
+    top: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+  }
+  /* mis proyectos responsive */
+  .imgCarrusel {
+    width: 0%;
+    border: none;
+    margin-left: 370px;
+  }
+  .imgs {
+    margin-left: -370px;
+  }
+  /* Mi CV */
+  .pdf {
+    display: none;
+  }
+  .mi-pdf {
+    display: block;
+    width: 100%;
+  }
+  .descargarCv {
+    display: flex;
+    width: 40%;
+    margin: 40px;
+    text-decoration: none;
+    font-style: bold;
+  }
+  .boton-descargar {
+    margin-left: 100px;
+    background-color: rgb(212, 85, 85);
+  }
+  /* formulario contacto */
+  .form-contacto {
+    margin-top: -10px;
+  }
+  /* Sobre Mi responsive */
+  .sobre-mi-container {
+    height: 1869px;
+    margin-top: 10px;
+  }
+  .sobre-mi-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre-mi-section img, .sobre-mi-section .sobre-mi-text {
+    width: 100%;
+  }
+  .sobre-mi-botones {
+    width: 40px;
+    margin-top: 26px;
+    margin-left: 36px;
+  }
+}
 /* fin de responsive mobile */
