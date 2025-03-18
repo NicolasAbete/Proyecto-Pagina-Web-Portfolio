@@ -30,8 +30,11 @@ h2 {
 
 /* Header */
 .mi-header {
-  background: linear-gradient(to right, rgb(212, 85, 85), rgb(171, 95, 95));
+  background-color: #2a6cbb;
+  background-image: linear-gradient(62deg, #87beff 33%, #9c64d9 80%);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  transition: all 0.3s ease;
   padding: 15px 0;
   transition: all 0.3s ease;
 }
@@ -56,7 +59,7 @@ h2 {
 }
 .mi-header .navbar-nav .nav-link.mi-nav-link.active {
   color: white;
-  background-color: rgba(212, 85, 85, 0.6);
+  background-color: rgb(136, 208, 230);
 }
 .mi-header .navbar-nav .nav-link.mi-nav-link.active::after {
   content: "";
@@ -124,7 +127,8 @@ h2 {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  background-color: rgb(212, 85, 85);
+  background-color: #2a6cbb;
+  background-image: linear-gradient(62deg, #4d8edb 33%, #9c64d9 80%);
   border-radius: 30px;
 }
 
@@ -164,7 +168,8 @@ h2 {
 /* --------------------------------------fin footer */
 /* index */
 body {
-  background-color: rgb(211, 181, 181);
+  background-color: #87beff;
+  background-image: linear-gradient(62deg, #87beff 33%, #b36dff 80%);
   font-family: "Nunito Sans", serif;
 }
 
@@ -232,7 +237,8 @@ body {
 /* fin de formulario */
 /* Pagina Sobre Mi */
 .sobre-mi-body {
-  background: rgb(211, 181, 181);
+  background-color: #87beff;
+  background-image: linear-gradient(62deg, #87beff 33%, #b36dff 80%);
   color: #fff;
   text-align: center;
 }
@@ -240,7 +246,8 @@ body {
   width: 90%;
   max-width: 900px;
   margin: 50px auto;
-  background: rgb(218, 104, 104);
+  background-color: #87beff;
+  background-image: linear-gradient(62deg, #87beff 33%, #b36dff 80%);
   padding: 30px;
   border-radius: 15px;
   margin-top: 75px;
@@ -304,7 +311,7 @@ body {
 /* Mis Proyectos */
 .imgCarrusel {
   border: solid;
-  border-color: rgb(212, 85, 85);
+  border-color: rgb(52, 160, 248);
   border-radius: 5px;
   margin: 200px;
   margin-top: 10px;
@@ -317,7 +324,7 @@ body {
     position: relative;
     left: auto;
     transform: none;
-    background-color: rgba(212, 85, 85, 0.95);
+    background-color: rgba(138, 189, 231, 0.95);
     border-radius: 8px;
     margin-top: 10px;
     padding: 10px;
@@ -454,7 +461,7 @@ body {
   }
   .boton-descargar {
     margin-left: 100px;
-    background-color: rgb(212, 85, 85);
+    background-color: rgb(136, 208, 230);
   }
   /* formulario contacto */
   .form-contacto {
