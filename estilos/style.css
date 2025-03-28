@@ -386,14 +386,15 @@ body {
   .textos-img {
     width: 100%;
     margin-right: 30px;
+    font-size: 19px;
   }
   .textos-bajoimg {
     display: grid;
     grid-template-rows: 30% auto auto;
     grid-area: "texthtml" "textcss" "textjs";
-    width: 90%;
-    height: 500px;
-    margin-left: 20px;
+    width: 98%;
+    height: 630px;
+    margin-left: 1px;
   }
   .texthtml {
     grid-area: texthtml;
@@ -403,7 +404,7 @@ body {
     grid-area: textcss;
     grid-row: 2/3;
     margin-left: 2px;
-    margin-bottom: -30px;
+    margin-bottom: -7px;
   }
   .textjs {
     grid-area: textjs;

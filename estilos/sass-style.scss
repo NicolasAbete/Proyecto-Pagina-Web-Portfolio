@@ -439,6 +439,7 @@ body {
     .textos-img {
         width: 100%;
         margin-right: 30px;
+        font-size: 19px;
     }
 
     .textos-bajoimg {
@@ -448,21 +449,22 @@ body {
             "texthtml"
             "textcss"
             "textjs";
-        width: 90%;
-        height: 500px;
-        margin-left: 20px;
+        width: 98%;
+        height: 630px;
+        margin-left: 1px;
     }
 
     .texthtml {
         grid-area: texthtml;
         grid-row: 1 / 2;
+        
     }
 
     .textcss {
         grid-area: textcss;
         grid-row: 2 / 3;
         margin-left: 2px;
-        margin-bottom: -30px;
+        margin-bottom: -7px;
     }
 
     .textjs {
