@@ -43,53 +43,57 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     transition: all 0.3s ease;
-    padding: 15px 0;
+}
+
+.mi-navbar {
+    position: relative;
+}
+
+.mi-header .navbar-nav {
+    text-align: center;
+}
+
+.mi-header .navbar-nav .mi-nav-item {
+    margin: 0 5px;
+}
+
+.mi-header .navbar-nav .nav-link.mi-nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 8px 50px;
+    border-radius: 5px;
     transition: all 0.3s ease;
+    position: relative;
+}
 
-    .navbar-nav {
-        text-align: center;
-    .mi-nav-item {
-        margin: 0 5px;
-    }
+.mi-header .navbar-nav .nav-link.mi-nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
 
-    .nav-link.mi-nav-link {
-        color: rgba(255, 255, 255, 0.85);
-        font-weight: 500;
-        padding: 8px 50px;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-        position: relative;
+.mi-header .navbar-nav .nav-link.mi-nav-link.active {
+    color: white;
+    background-color: rgb(136, 208, 230);
+}
 
-        &:hover {
-        color: white;
-        background-color: rgba(255, 255, 255, 0.2);
-        transform: translateY(-2px);
-        }
-
-        &.active {
-        color: white;
-        background-color: rgb(136, 208, 230);
-
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 20px;
-            height: 3px;
-            background-color: white;
-            transform: translateX(-50%);
-            border-radius: 3px;
-        }
-        }
-    }
-    }
+.mi-header .navbar-nav .nav-link.mi-nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    transform: translateX(-50%);
+    border-radius: 3px;
 }
 
 .mi-brand-container {
     display: flex;
     align-items: center;
-    margin-left: -250px;
+    margin-left: -120px;
+    justify-content: flex-start; 
 }
 
 .mi-logo {
@@ -106,24 +110,20 @@ h2 {
     font-size: 1.5rem;
     transition: all 0.3s ease;
     text-decoration: none;
-
-    &:hover {
-    color: #e0e0e0;
-    transform: translateY(-2px);
-    }
 }
 
-.mi-navbar {
-    position: relative;
+.mi-brand:hover {
+    color: #e0e0e0;
+    transform: translateY(-2px);
 }
 
 .mi-navbar-toggler {
     border: none;
     padding: 0;
+}
 
-    &:focus {
+.mi-navbar-toggler:focus {
     box-shadow: none;
-    }
 }
 
 .mi-navbar-toggler-icon {
@@ -378,36 +378,6 @@ body {
 /*-------------------*/
 
 @media screen and (max-width: 500px) {
-  /* header */
-    .mi-navbar-collapse {
-        position: relative;
-        left: auto;
-        transform: none;
-        background-color: rgba(138, 189, 231, 0.95);
-        border-radius: 8px;
-        margin-top: 10px;
-        padding: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        width: 105%;
-    }
-
-    .mi-brand-container {
-        margin-left: 0px;
-    }
-
-    .mi-header {
-    .navbar-nav {
-        .nav-link.mi-nav-link {
-            padding: 10px 15px;
-            margin: 5px 0;
-
-        &.active::after {
-            width: 40px;
-        }
-        }
-    }
-    }
-
   /* index */
     .h1-index {
         justify-content: center;
@@ -581,6 +551,51 @@ body {
     .copyright {
         font-size: 14px;
         margin-top: 20px;
+    }
+}
+
+/*responsive header*/
+@media (max-width: 1200px) {
+    .mi-header .navbar-nav {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .mi-brand-container {
+        margin-left: 0;
+        justify-content: flex-start; 
+    }
+
+    .mi-navbar-collapse {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .mi-navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mi-nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mi-nav-link {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mi-logo {
+        height: 60px;
+    }
+
+    .mi-brand {
+        font-size: 1.2rem;
     }
 }
 /* fin de responsive mobile */
