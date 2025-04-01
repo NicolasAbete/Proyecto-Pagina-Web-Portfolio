@@ -202,52 +202,67 @@ body {
     background-color: #87beff;
     background-image: linear-gradient(62deg, #87beff 33%, #b36dff 80%);
     font-family: "Nunito Sans", serif;
-}  
+    margin: 0;
+    padding: 0;
+}
 
+.h1-index h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+  /* Contenedor de las imágenes de los conocimientos */
 .itemsimg {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    margin-top: 30px;
 }
 
+  /* Las imágenes deben tener el mismo tamaño */
 .imgConocimientos {
     width: 100%;
+    height: 421px;
+    object-fit: contain; /* Mantiene la proporción y recorta si es necesario */
 }
 
-.imghtml {
-    width: 105%;
-}
-
-.imgcss {
-    width: 65%;
-    margin-left: 100px;
-    margin-top: 20px;
-}
-
-.imgjs {
-    width: 73%;
-    margin-top: 20px;
-}
-
+  /* Sección de texto debajo de las imágenes */
 .textos-bajoimg {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espaciado entre los textos */
     text-align: center;
     margin-top: 30px;
-    margin-left: 50px;
 }
 
 .textos-img {
     font-size: 20px;
-    width: 80%;
+    width: 100%; /* Asegura que cada texto ocupe el 100% de su columna */
+    box-sizing: border-box; /* Incluye padding y border dentro del tamaño */
+    padding: 0 10px; /* Espaciado interno para que el texto no toque los bordes */
+    margin: 0; /* Elimina márgenes innecesarios */
 }
 
-.textcss {
-    margin-left: 30px;
+.textos-img p {
+    margin: 0;
+    padding: 0;
 }
 
-/* fin de index */
+  /* Aumentar tamaño específico para la imagen HTML */
+.imghtml {
+    width: 100%; /* Asegura que tenga el mismo tamaño que las demás imágenes */
+}
+.imgcss {
+    width: 85%;
+    margin-top: 5px;
+    margin-left: 36px;
+}
+.imgjs {
+    width: 85%;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+  /* fin de index */
 
 /* Formulario de contacto */
 .form-contacto {
@@ -378,85 +393,6 @@ body {
 /*-------------------*/
 
 @media screen and (max-width: 500px) {
-  /* index */
-    .h1-index {
-        justify-content: center;
-    }
-
-    .itemsimg {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "imghtml"
-            "imgcss"
-            "imgjs";
-    }
-
-    .imghmtl {
-        grid-area: imghtml;
-        width: 60%;
-        height: 5%;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-
-    .imgcss {
-        grid-area: imgcss;
-        margin-top: 26px;
-        margin-bottom: 20px;
-        margin-right: 100px;
-        width: 70%;
-        margin-left: 59px;
-    }
-
-    .imgjs {
-        grid-area: imgjs;
-        margin-left: 65px;
-        width: 70%;
-    }
-
-    .textos-img {
-        width: 100%;
-        margin-right: 30px;
-        font-size: 19px;
-    }
-
-    .textos-bajoimg {
-        display: grid;
-        grid-template-rows: 30% auto auto;
-        grid-area:
-            "texthtml"
-            "textcss"
-            "textjs";
-        width: 98%;
-        height: 630px;
-        margin-left: 1px;
-    }
-
-    .texthtml {
-        grid-area: texthtml;
-        grid-row: 1 / 2;
-        
-    }
-
-    .textcss {
-        grid-area: textcss;
-        grid-row: 2 / 3;
-        margin-left: 2px;
-        margin-bottom: -7px;
-    }
-
-    .textjs {
-        grid-area: textjs;
-        grid-row: 3 / 4;
-        margin-top: 5px;
-    }
-
-  /* Fin de index */
-
   /* mis proyectos responsive */
     .imgCarrusel {
         width: 0%;
@@ -596,6 +532,46 @@ body {
 
     .mi-brand {
         font-size: 1.2rem;
+    }
+}
+/*index responsive*/
+@media (max-width: 991px) {
+    .textos-img {
+        font-size: 18px;
+    }
+    
+    .imghtml {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .imgcss {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 22px;
+        margin-top: 1px;
+        align-items: center;
+    }
+
+    .imgjs {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 22px;
+        margin-top: 1px;
+        align-items: center;
+    }
+
+    .itemsimg {
+      grid-template-columns: 1fr; /* Una columna */
+    }
+
+    .textos-bajoimg {
+      grid-template-columns: 1fr; /* Una columna */
+    }
+    
+    .textos-img p {
+        font-size: 19px;
     }
 }
 /* fin de responsive mobile */
