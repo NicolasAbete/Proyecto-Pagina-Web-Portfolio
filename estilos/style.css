@@ -344,9 +344,6 @@ body {
   flex-direction: row-reverse;
   margin-right: 69px;
 }
-.sobre-mi-botones a {
-  margin-right: 77px;
-}
 
 /* fin de pagina Sobre Mi */
 /* Mis Proyectos */
@@ -496,6 +493,10 @@ body {
   .imghtml {
     display: flex;
     justify-content: space-around;
+  }
+  .html-img {
+    width: 110%;
+    margin-left: -20px;
   }
   .imgcss {
     display: flex;
